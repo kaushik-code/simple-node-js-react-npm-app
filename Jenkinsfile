@@ -4,14 +4,14 @@ pipeline {
              tools {
                  nodejs "nodejs"
              }
-            image 'node:latest-alpine'
+            image 'node:6-alpine'
             args '-p 3000:3000' 
         }
     }
     stages {
         stage('Build') { 
             steps {
-                sh 'npm i npm@6.14.4' 
+                sh 'npm config ls' 
             }
         }
     }
