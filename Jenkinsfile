@@ -4,7 +4,7 @@ pipeline {
              tools {
                  nodejs "nodejs"
              }
-            image 'node:6-alpine'
+            image 'node:latest-alpine'
             args '-p 3000:3000' 
         }
     }
