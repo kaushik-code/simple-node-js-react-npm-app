@@ -10,7 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'npm i npm@6.14.4'
+                sh 'npm i'
             }
         }
         stage('Test') {
