@@ -10,7 +10,9 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'npm i'
+                sh 'npm install'
+                sh 'export NODE_OPTIONS=--openssl-legacy-provider'
+                sh 'npm run build'
             }
         }
         stage('Test') {
@@ -25,4 +27,3 @@ pipeline {
         }
     }
 }
-kaushil
