@@ -10,6 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
+                sh 'git 'https://github.com/kaushik-code/simple-node-js-react-npm-app.git'
                 sh 'npm install'
                 sh 'export NODE_OPTIONS=--openssl-legacy-provider'
                 sh 'npm run build'
